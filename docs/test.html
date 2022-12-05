@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{padding:0;margin:0}
+    .header,.footer{
+      height: 80px;
+      min-width: 500px;
+      line-height:80px;
+      text-align: center;
+      color: white;
+    }
+    .header{
+      background-color: red;
+    }
+    .footer{
+      background-color: black;
+    }
+    .containter{
+      padding: 0 220px 0 200px;
+      overflow: hidden;
+      min-width: 500px;
+    }
+    .left,.right,.middle{
+      float:left;
+      height: 100%;
+      word-break: break-all;
+      min-height: 520px;
+    }
+    .left{
+      width: 200px;
+      position: relative;
+      left: -200px;
+      margin-left: -100%;
+      background-color: green;
+    }
+    .right{
+      width: 220px;
+      position: relative;
+      right: -220px;
+      margin-left: -220px;
+      background-color: yellow;
+    }
+    .middle{
+      width:100%;
+      background-color: pink;
+    }
+  </style>
+  <!-- <script>
+    window.addEventListener('error',function(ev){
+      console.log(ev, 1)
+    }, true)
+    window.onerror = function(ev){
+      console.log(ev, 2);
+    }
+    // run();
+  </script> -->
+</head>
+<body>
+  <!-- <img src="http://www.jpg"> -->
+  <div class="header">header</div>
+  <div class="containter">
+    <div class="middle">
+      我是中间内容
+    </div>
+    <div class="left">
+      left
+    </div>
+    <div class="right">
+      right
+    </div>
+  </div>
+  <div class="footer">footer</div>
+
+
+</body>
+</html>
